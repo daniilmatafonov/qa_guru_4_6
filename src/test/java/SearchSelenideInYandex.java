@@ -20,7 +20,7 @@ public class SearchSelenideInYandex {
         open(url);
 
         // search Selenide
-        $(("#text")).val("Selenide").pressEnter();
+        $("#text").val("Selenide").pressEnter();
 
         // check if Selenide is found
         $(withText("selenide.org")).shouldBe(Condition.exist);
